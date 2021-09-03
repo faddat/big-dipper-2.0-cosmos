@@ -1,0 +1,11 @@
+query DelegationTrends ($limit: Int = 7, $offset: Int = 0) {
+  delegation(limit: $limit, offset: $offset, order_by: {amount: desc}) {
+    amount
+    delegatorAddress: delegator_address
+    validator {
+      validatorInfo: validator_info {
+        operatorAddress: operator_address
+      }
+    }
+  }
+}
