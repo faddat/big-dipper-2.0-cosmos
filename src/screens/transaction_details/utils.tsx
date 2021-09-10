@@ -356,7 +356,12 @@ const getDataByType = (type: string) => {
       tagTheme: 'four',
       tagDisplay: 'txUnblockUserLabel',
     },
-
+    '/em.market.v1.MsgAddLimitOrder': {
+      model: MODELS.MsgAddLimitOrder,
+      content: COMPONENTS.AddLimitOrder,
+      tagTheme: 'thirteen',
+      tagDisplay: 'txUnblockUserLabel',
+    },
   };
 
   if (defaultTypeToModel[type]) return defaultTypeToModel[type];

@@ -52,6 +52,7 @@ import ConnectionOpenTry from './msg/ibc/connection_open_try';
 import CounterpartyConnection from './msg/ibc/connection_counterparty';
 import Version from './msg/ibc/connection_version';
 import Transfer from './msg/ibc_transfer/transfer';
+import AddLimitOrder from './msg/market/add_limit_order';
 
 export {
   Overview,
@@ -112,4 +113,5 @@ export {
   CounterpartyConnection,
   Version,
   Transfer,
+  AddLimitOrder,
 };
